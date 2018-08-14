@@ -1,0 +1,25 @@
+{
+  "name": "nest-emitter",
+  "version": "1.0.0",
+  "description": "Strongly Typed Event Emitter Module For Nestjs Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --notify --config=jest.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shekohex/nest-emitter.git"
+  },
+  "keywords": [
+    "nestjs",
+    "eventemitter",
+    "modules",
+    "nest"
+  ],
+  "author": "Shady Khalifa <shekohex@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shekohex/nest-emitter/issues"
+  },
+  "homepage": "https://github.com/shekohex/nest-emitter#readme"
+}
