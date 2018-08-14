@@ -1,10 +1,15 @@
 {
   "name": "nest-emitter",
   "version": "1.0.0",
-  "description": "Strongly Typed Event Emitter Module For Nestjs Framework",
+  "description": "Strongly Typed Eventemitter Module For Nestjs Framework",
   "main": "index.js",
   "scripts": {
-    "test": "jest --notify --config=jest.json"
+    "test": "jest --notify --config=jest.json",
+    "test:watch": "jest --watch --config=jest.json",
+    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage",
+    "build": "gulp build && gulp move",
+    "build:lib": "gulp build --dist lib && cp -rf package.json lib && cp -rf README.md lib",
+    "npm:publish": "cd lib && npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,20 @@
   "bugs": {
     "url": "https://github.com/shekohex/nest-emitter/issues"
   },
-  "homepage": "https://github.com/shekohex/nest-emitter#readme"
+  "homepage": "https://github.com/shekohex/nest-emitter#readme",
+  "devDependencies": {
+    "@nestjs/common": "^5.0.0",
+    "@nestjs/core": "^5.0.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.0.0",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.7.0",
+    "coveralls": "^3.0.2",
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "jest": "^23.5.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
 }
