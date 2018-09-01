@@ -19,7 +19,14 @@ and not only that, it will work with any kind of `EventEmitter` that implements 
 
 #### IMPORTANT: you will need typescript 3.0+
 
-> TODO: add install after publishing it to npm
+```bash
+npm install nest-emitter
+```
+or 
+
+```bash
+yarn add nest-emitter
+```
 
 ## Usage
 
