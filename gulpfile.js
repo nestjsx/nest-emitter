@@ -16,5 +16,5 @@ gulp.task('build', () => {
 gulp.task('move', function() {
   gulp
     .src([`node_modules/${packageName}/**/*`])
-    .pipe(gulp.dest(`example/node_modules/${packageName}`));
+    .pipe(gulp.dest(`examples/node-emitter/node_modules/${packageName}`));
 });
