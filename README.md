@@ -4,12 +4,12 @@ Strongly 💪🏼 Typed Eventemitter Module For [Nestjs](https://github.com/nest
 
 ## Quick Overview
 
-Never wondered if there is a way to have a strongly typed way to use event emitter names ?
+Ever wondered if there is a way to have a strongly typed way to use event emitter names ?
 
-Never wondered why your event emitter not working as intended and then realized that there
-was a typo on your events name ? if so, then this ones for you :smile: .
+Ever wondered why your event emitter is not working as intended and then realized that there
+was a typo on your events name? if so, then this ones for you :smile: .
 
-## How ?
+## How?
 
 By Declaring events using a simple interface mapping event names to their payloads to get stricter versions of `emit`, `on`, and other common EventEmitter APIs.
 
@@ -32,9 +32,9 @@ yarn add nest-emitter
 
 As Normal Import `NestEmitterModule` into your root module _(aka `AppModule`)_
 
-the `NestEmitterModule#forRoot(emitter: NodeJS.Events)` takes any event emitter that that implements `NodeJS.Events`.
+The `NestEmitterModule#forRoot(emitter: NodeJS.Events)` takes any event emitter that that implements `NodeJS.Events`.
 
-for simplicity i will use nodejs built-in eventemitter, but of course you can use what you need.
+For simplicity I will use nodejs built-in eventemitter, but of course you can use whatever you need.
 
 ```ts
 // app.module.ts
@@ -52,7 +52,7 @@ import { EventEmitter } from 'events';
 export class AppModule {}
 ```
 
-now it's time to define our events, let's add two events
+Now it's time to define our events, let's add two events
 one called `notification` and it's payload will be a string.
 and another one is `newRequest` and it's payload will be function that has one arg of type `Request`.
 
@@ -66,7 +66,7 @@ interface AppEvents {
 }
 ```
 
-after that let's bring up our secret weapon; the `StrictEventEmitter`
+After that let's bring up our secret weapon; the `StrictEventEmitter`!
 
 ```ts
 // app.events.ts
@@ -83,9 +83,9 @@ export type MyEventEmitter = StrictEventEmitter<EventEmitter, AppEvents>;
 
 good good, now let's use it.
 
-> :+1: TIP: Keep all of your events in a separate file like `{prefix}.events.ts`
+> :+1: TIP: Keep all of your events in a separate file like `{prefix}.events.ts`.
 
-i will use it to send a notificaion when we got a request
+I will use it to send a notificaion when we receive a request
 
 ```ts
 // app.controller.ts
@@ -114,7 +114,7 @@ export class AppController {
 }
 ```
 
-did you notic `@InjectEventEmitter()` ? you guessed it, it's a helper decorator to get the instance of the underlying eventemitter.
+Did you notice `@InjectEventEmitter()`? you guessed it, it's a helper decorator to get the instance of the underlying eventemitter.
 
 now on the other side
 
@@ -144,7 +144,7 @@ export class AppService implements OnModuleInit {
 }
 ```
 
-and that's it, easy ? now let's Dive in.
+And that's it! Easy? now let's dive in.
 
 ## In Depth
 
@@ -195,8 +195,7 @@ clientSocket.on(/* only events that are sent from the server are allowed */, ...
 clientSocket.emit(/* only events that are emitted from the client are allowed */, ...)
 ```
 
-for more information about `StrictEventEmitter` see [@bterlson 's library](https://github.com/bterlson/strict-event-emitter-types)
-
+For more information about `StrictEventEmitter` see [@bterlson 's library](https://github.com/bterlson/strict-event-emitter-types)
 
 
 ## CHANGELOG
