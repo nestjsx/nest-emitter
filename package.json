@@ -1,6 +1,6 @@
 {
   "name": "nest-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strongly Typed Eventemitter Module For Nestjs Framework",
   "main": "index.js",
   "scripts": {
