@@ -27,7 +27,7 @@ move() {
     echo 'Copying files to examples/**/node_modules ..'
     for d in examples/*; do
         if [ -d "$d" ]; then
-            dist="$d"/node_modules/nest-router
+            dist="$d"/node_modules/nest-emitter
             echo 'Start copying to' "$dist"
             mkdir -p "$dist" && cp -rf lib/* "$dist"
         fi
