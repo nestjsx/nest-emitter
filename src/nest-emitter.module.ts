@@ -6,6 +6,6 @@ type NestEmitter = NodeJS.Events;
 export class NestEmitterModule {
   public static forRoot(emitter: NestEmitter): DynamicModule {
     const providers: Provider[] = [{ provide: EVENT_EMITTER_TOKEN, useValue: emitter }];
-    return { module: NestEmitterModule, components: providers, exports: providers };
+    return { module: NestEmitterModule, providers: providers, exports: providers };
   }
 }
