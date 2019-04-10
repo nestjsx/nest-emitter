@@ -1,6 +1,6 @@
 {
   "name": "nest-emitter",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Strongly Typed Eventemitter Module For Nestjs Framework",
   "main": "index.js",
   "scripts": {
@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/shekohex/nest-emitter#readme",
   "devDependencies": {
-    "@nestjs/common": "^5.0.0",
-    "@nestjs/core": "^5.0.0",
+    "@nestjs/common": "^6.0.5",
+    "@nestjs/core": "^6.0.5",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.7.0",
     "coveralls": "^3.0.2",
