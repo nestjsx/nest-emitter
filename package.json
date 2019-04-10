@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/shekohex/nest-emitter#readme",
   "devDependencies": {
-    "@nestjs/common": "^5.0.0",
-    "@nestjs/core": "^5.0.0",
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.7.0",
     "coveralls": "^3.0.2",
@@ -39,5 +39,8 @@
     "ts-jest": "^23.10.5",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.1"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^5.0.0 || ^6.1.0"
   }
 }
