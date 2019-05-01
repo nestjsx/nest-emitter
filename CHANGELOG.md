@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.0] - 2019-05-01
+
+- Support Nestjs v6
+
 ## [1.0.0] - 2018-09-01
 
 - Published to NPM :rocket:
