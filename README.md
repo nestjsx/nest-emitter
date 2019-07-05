@@ -211,7 +211,7 @@ You are welcome to contribute to this project, just open a PR.
 - **Shady Khalifa** ([@shekohex](https://github.com/shekohex)) - _Initial work_
 - **Brian Terlson** ([@bterlson](https://github.com/bterlson)) - _strict event emitter types_
 
-See also the list of [contributors](https://github.com/shekohex/nest-router/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/nestjsx/nest-router/contributors) who participated in this project.
 
 ## License
 

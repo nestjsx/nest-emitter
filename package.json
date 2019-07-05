@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shekohex/nest-emitter.git"
+    "url": "git+https://github.com/nestjsx/nest-emitter.git"
   },
   "keywords": [
     "nestjs",
@@ -24,9 +24,9 @@
   "author": "Shady Khalifa <shekohex@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shekohex/nest-emitter/issues"
+    "url": "https://github.com/nestjsx/nest-emitter/issues"
   },
-  "homepage": "https://github.com/shekohex/nest-emitter#readme",
+  "homepage": "https://github.com/nestjsx/nest-emitter#readme",
   "devDependencies": {
     "@nestjs/common": "^6.0.5",
     "@nestjs/core": "^6.0.5",
