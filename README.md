@@ -32,7 +32,7 @@ yarn add nest-emitter
 
 As Normal Import `NestEmitterModule` into your root module _(aka `AppModule`)_
 
-The `NestEmitterModule#forRoot(emitter: NodeJS.Events)` takes any event emitter that that implements `NodeJS.Events`.
+The `NestEmitterModule#forRoot(emitter: NodeJS.Events)` takes any event emitter that implements `NodeJS.Events`.
 
 For simplicity I will use nodejs built-in eventemitter, but of course you can use whatever you need.
 
@@ -85,7 +85,7 @@ good good, now let's use it.
 
 > :+1: TIP: Keep all of your events in a separate file like `{prefix}.events.ts`.
 
-I will use it to send a notificaion when we receive a request
+I will use it to send a notification when we receive a request
 
 ```ts
 // app.controller.ts
