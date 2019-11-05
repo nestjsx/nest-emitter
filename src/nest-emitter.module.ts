@@ -1,6 +1,7 @@
 import { Module, DynamicModule, Global, Provider } from '@nestjs/common';
 import { EVENT_EMITTER_TOKEN } from './constants';
-type NestEmitter = NodeJS.Events;
+import { EventEmitter } from 'events';
+interface NestEmitter extends EventEmitter {}
 @Global()
 @Module({})
 export class NestEmitterModule {
