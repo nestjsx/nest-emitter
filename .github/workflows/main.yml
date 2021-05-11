@@ -21,8 +21,8 @@ jobs:
       - name: build
         run: npm run build
 
-      - name: tests
-        run: npm run test --coverage
+      # - name: tests
+      #   run: npm run test --coverage
 
   #     - name: Coveralls Parallel
   #       uses: coverallsapp/github-action@master
