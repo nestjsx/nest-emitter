@@ -11,11 +11,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
 	steps:
-	- uses: actions/checkout@v2
-	- name: install
-		run: npm install --ignore-scripts
-	- name: build
-		run: npm run build
-	- name: tests
-		run: npm run test --coverage
+		- uses: actions/checkout@v2
+		- name: install
+			run: npm install --ignore-scripts
+		- name: build
+			run: npm run build
+		- name: tests
+			run: npm run test --coverage
 
