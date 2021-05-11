@@ -1,0 +1,42 @@
+name: Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: install
+        run: npm i --ignore-scripts
+      
+      - name: build
+        run: npm run build
+
+      # - name: tests
+      #   run: npm run test --coverage
+
+  #     - name: Coveralls Parallel
+  #       uses: coverallsapp/github-action@master
+  #       with:
+  #         github-token: ${{ secrets.github_token }}
+  #         flag-name: run-${{ matrix.test_number }}
+  #         parallel: true
+
+  # coverage:
+  #   needs: test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Coveralls coverage
+  #     uses: coverallsapp/github-action@master
+  #     with:
+  #       github-token: ${{ secrets.github_token }}
+  #       parallel-finished: true

@@ -3,7 +3,8 @@
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
   },
-  "testRegex": "./src/.*\\.(test|spec).(ts|tsx|js)$",
+  "testRegex": ".*\\.(test|spec).(ts|tsx|js)$",
+  "rootDir": "src",
   "collectCoverageFrom": [
     "src/**/*.ts",
     "!src/main.ts",
